@@ -1,0 +1,110 @@
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 120px 20px 60px;
+
+  text-align: center;
+
+  background: radial-gradient(
+    circle at top,
+    var(--card),
+    var(--bg)
+  );
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle glow background */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+
+  background: var(--primary);
+  opacity: 0.08;
+  filter: blur(120px);
+
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* CONTENT LAYER */
+.hero > div {
+  position: relative;
+  z-index: 1;
+}
+
+/* TITLE */
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+
+  color: var(--text);
+
+  word-break: break-word;
+}
+
+/* highlight effect */
+.hero h1 span {
+  color: var(--primary);
+}
+
+/* TEXT */
+.hero p {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 600px;
+  margin: auto;
+}
+
+/* CTA (لو عندك زرار لاحقًا) */
+.hero .cta {
+  margin-top: 25px;
+}
+
+/* =======================
+   TABLET
+======================= */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 100px 15px 50px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,137 @@
+
+/* SECTION */
+.projects-section {
+  padding: 100px 20px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* TITLE */
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* subtitle optional feel */
+.projects-section::before {
+  content: "My Work";
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: var(--primary);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* CARD */
+.project-card {
+  background: var(--card);
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+
+  border: 1px solid rgba(255,255,255,0.05);
+
+  transition: 0.4s ease;
+  position: relative;
+}
+
+/* hover glow */
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    var(--primary),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.project-card:hover::after {
+  opacity: 0.08;
+}
+
+/* IMAGE */
+.img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+/* INFO */
+.project-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-info h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.project-info p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+/* CTA TEXT */
+.view-text {
+  font-size: 13px;
+  color: var(--primary);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+.project-card:hover .view-text {
+  letter-spacing: 1px;
+}
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width: 480px) {
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .img-wrapper {
+    height: 180px;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+}

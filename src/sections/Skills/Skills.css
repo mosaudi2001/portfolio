@@ -1,0 +1,109 @@
+
+/* SECTION */
+.skills-section {
+  padding: 100px 20px;
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+}
+
+/* TITLE */
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* subtitle feel */
+.skills-section::before {
+  content: "What I Use";
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--primary);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.skill {
+  background: var(--card);
+  padding: 25px 15px;
+  border-radius: 16px;
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,0.05);
+
+  transition: 0.4s ease;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow hover effect */
+.skill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    var(--primary),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.skill:hover::before {
+  opacity: 0.12;
+}
+
+/* ICON */
+.skill svg {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: var(--primary);
+  transition: 0.3s ease;
+}
+
+/* TEXT */
+.skill h5 {
+  font-size: 14px;
+  margin: 0;
+  color: var(--text);
+}
+
+/* HOVER */
+.skill:hover {
+  transform: translateY(-10px);
+}
+
+.skill:hover svg {
+  transform: scale(1.15) rotate(3deg);
+}
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 26px;
+  }
+
+  .skills-grid {
+    gap: 15px;
+  }
+
+  .skill {
+    padding: 20px 10px;
+  }
+}
