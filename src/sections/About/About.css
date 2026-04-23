@@ -23,19 +23,27 @@
 .about-image img {
   width: 100%;
   max-width: 340px;
-
   border-radius: 24px;
-
   object-fit: cover;
-
   box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-
   transition: 0.4s ease;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
 }
 
 /* hover effect */
 .about-image img:hover {
   transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
 }
 
 /* CONTENT */
@@ -52,12 +60,14 @@
   position: absolute;
   left: 0;
   bottom: -8px;
-
   width: 60px;
   height: 3px;
-
   background: var(--primary);
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .about-content p {
@@ -76,24 +86,31 @@
 
 .about-stats div {
   background: var(--card);
-
   padding: 18px;
-
   border-radius: 16px;
-
   text-align: center;
   flex: 1;
   min-width: 110px;
-
   transition: 0.3s ease;
-
   border: 1px solid rgba(255,255,255,0.05);
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 
 /* hover lift */
 .about-stats div:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
 }
 
 .about-stats h3 {
@@ -112,22 +129,30 @@
 .skills span {
   background: var(--card);
   color: var(--text);
-
   padding: 7px 14px;
   border-radius: 20px;
-
   font-size: 14px;
-
   border: 1px solid rgba(255,255,255,0.05);
-
   transition: 0.3s ease;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 /* skill hover */
 .skills span:hover {
   background: var(--primary);
-  color: white;
+  color: #fff;
   transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
 }
 
 /* =======================
@@ -147,7 +172,11 @@
   .about-content h2::after {
     left: 50%;
     transform: translateX(-50%);
-  }
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
 
   .about-content h2 {
     font-size: 32px;

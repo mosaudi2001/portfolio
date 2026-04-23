@@ -2,21 +2,16 @@
 /* HERO */
 .hero {
   min-height: 100vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 120px 20px 60px;
-
   text-align: center;
-
   background: radial-gradient(
     circle at top,
     var(--card),
     var(--bg)
   );
-
   position: relative;
   overflow: hidden;
 }
@@ -27,15 +22,17 @@
   position: absolute;
   width: 500px;
   height: 500px;
-
   background: var(--primary);
   opacity: 0.08;
   filter: blur(120px);
-
   top: -150px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 /* CONTENT LAYER */
@@ -49,11 +46,8 @@
   font-size: 56px;
   line-height: 1.2;
   margin-bottom: 15px;
-
   font-weight: 700;
-
   color: var(--text);
-
   word-break: break-word;
 }
 

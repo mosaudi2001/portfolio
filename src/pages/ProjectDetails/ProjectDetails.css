@@ -13,19 +13,21 @@
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 40px;
-
   align-items: stretch;
-
   background: var(--card);
   border-radius: 25px;
-
   overflow: hidden;
-
-  /* 🔥 better glass */
-  border: 1px solid rgba(255,255,255,0.06);
+  /*🔥betterglass*/border: 1px solid rgba(255,255,255,0.06);
   box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-
   transition: 0.3s ease;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 /* IMAGE SECTION */
@@ -57,11 +59,19 @@
   height: 100%;
   object-fit: cover;
   transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
 /* smoother zoom */
 .image-wrapper:hover .slide-img {
   transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
 }
 
 /* OVERLAY */
@@ -71,19 +81,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 20px;
-
   opacity: 0;
   transition: 0.35s ease;
-
   pointer-events: none;
-  background: linear-gradient(
-    to right,
-    rgba(0,0,0,0.25),
-    transparent,
-    rgba(0,0,0,0.25)
-  );
+  background: linear-gradient(    to right,    rgba(0,0,0,0.25),    transparent,    rgba(0,0,0,0.25)  );
+  -webkit-transition: 0.35s ease;
+  -moz-transition: 0.35s ease;
+  -ms-transition: 0.35s ease;
+  -o-transition: 0.35s ease;
 }
 
 .image-wrapper:hover .overlay {
@@ -93,19 +99,24 @@
 /* ARROWS */
 .arrow {
   font-size: 28px;
-  color: white;
-
+  color: #fff;
   background: rgba(0,0,0,0.4);
   padding: 10px 14px;
-
   border-radius: 50%;
   backdrop-filter: blur(6px);
-
   transition: 0.3s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .arrow:hover {
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 /* CONTENT */
@@ -131,13 +142,14 @@
   display: inline-block;
   padding: 6px 14px;
   font-size: 12px;
-
   border-radius: 20px;
-
   background: rgba(13,110,253,0.15);
   color: var(--primary);
-
   border: 1px solid rgba(13,110,253,0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 /* BUTTONS */
@@ -151,32 +163,46 @@
 .btn-primary {
   padding: 10px 20px;
   border-radius: 25px;
-
   background: linear-gradient(90deg, var(--primary), #00c6ff);
-  color: white;
-
+  color: #fff;
   text-decoration: none;
-
   transition: 0.3s;
   box-shadow: 0 10px 20px rgba(13,110,253,0.2);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 30px rgba(13,110,253,0.35);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
 }
 
 /* OUTLINE */
 .btn-outline {
   padding: 10px 20px;
   border-radius: 25px;
-
   border: 1px solid var(--text);
   color: var(--text);
-
   text-decoration: none;
-
   transition: 0.3s;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .btn-outline:hover {
@@ -194,22 +220,30 @@
 .nav-buttons button {
   padding: 10px 15px;
   border-radius: 20px;
-
   border: none;
-
   background: var(--card);
   color: var(--text);
-
   cursor: pointer;
-
   transition: 0.3s;
   border: 1px solid rgba(255,255,255,0.08);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .nav-buttons button:hover {
   background: var(--primary);
-  color: white;
+  color: #fff;
   transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
 }
 
 /* =======================
