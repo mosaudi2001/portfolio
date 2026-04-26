@@ -96,22 +96,23 @@ export default function ProjectDetails() {
               <p className="desc">{project.longDescription}</p>
 
               <div className="buttons">
-                <a href="#" className="btn-primary">Live Demo</a>
+                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn-primary" className="btn-primary">Live Demo</a>
                 <a href="#" className="btn-outline">GitHub</a>
               </div>
 
               <div className="nav-buttons">
+                 {next && (
+                  <button onClick={() => navigate(`/project/${next.id}`)}>
+                    Next →
+                  </button>
+                )}
                 {prev && (
                   <button onClick={() => navigate(`/project/${prev.id}`)}>
                     ← Previous
                   </button>
                 )}
 
-                {next && (
-                  <button onClick={() => navigate(`/project/${next.id}`)}>
-                    Next →
-                  </button>
-                )}
+               
               </div>
             </div>
 
