@@ -55,6 +55,23 @@ import perfume3 from '../assets/images/perfume3.png';
 import perfume4 from '../assets/images/perfume4.png';
 import perfume5 from '../assets/images/perfume5.png';
 import perfume6 from '../assets/images/perfume6.png';
+// buyora
+import buyora from '../assets/images/buyora.png';
+import buyora1 from '../assets/images/buyora1.png';
+import buyora2 from '../assets/images/buyora2.png';
+import buyora3 from '../assets/images/buyora3.png';
+import buyora4 from '../assets/images/buyora4.png';
+import buyora5 from '../assets/images/buyora5.png';
+import buyora6 from '../assets/images/buyora6.png';
+import buyora7 from '../assets/images/buyora7.png';
+import buyora8 from '../assets/images/buyora8.png';
+import buyora9 from '../assets/images/buyora9.png';
+import buyora10 from '../assets/images/buyora10.png';
+import buyora11 from '../assets/images/buyora11.png';
+import buyora12 from '../assets/images/buyora12.png';
+import buyora13 from '../assets/images/buyora13.png';
+import buyora14 from '../assets/images/buyora14.png';
+
 const projects = [
   {
     id: 1,
@@ -120,6 +137,14 @@ const projects = [
     longDescription: "Smart landing page UI",
     images: [perfume,perfume1,perfume2,perfume3,perfume4,perfume5,perfume6],
     demo:'https://perfume-rho-ten.vercel.app/',
+  },
+  {
+    id: 9,
+    title: "Buyora pro e-commerce",
+    description: "e-commerce shop",
+    longDescription: "Smart e-commerce ,responsive",
+    images: [buyora,buyora1,buyora2,buyora3,buyora4,buyora5,buyora6,buyora7,buyora8,buyora9,buyora10,buyora11,buyora12,buyora13,buyora14,],
+    demo:'https://buyora-henna.vercel.app/',
   }
 ];
 
